@@ -1,0 +1,15 @@
+<p>new-comp works!</p>
+<h2>
+    {{ title | slice:-2 }}
+</h2>
+<h2>
+    {{ num | currency:'RUB':'symbol-narrow': '4.2-2' }}
+    <h2>
+        {{ num | percent }}
+    </h2>
+</h2>
+
+<div>From object: {{ dateObject | date:"shortDate" }}</div>
+<div>From string: {{ dateString | date:"mediumDate" }}</div>
+<div>From number: {{ dateNumber | date:"longDate" }}</div>
+<div>Кастом: {{ dateObject | date:"dd-MM-yyyy": "UTC" }}</div>
